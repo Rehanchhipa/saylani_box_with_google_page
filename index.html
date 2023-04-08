@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box demo and Google page</title>
+    <style>
+        * {
+            margin: 20px;
+        }
+        .div_1 {
+            border: 1px solid black;
+            padding: 10px;
+            width: 40%;
+            background-color: yellow;
+            border-left: none;
+        }
+        .div_1 :first-child {
+            color:red
+        }
+        .div_1 :nth-child(2) {
+            text-align: end;
+        }
+        .div_1 :last-child {
+            color: blue;
+        }
+
+        .div_2 {
+            background-color: pink;
+            width: 40%;
+            padding: 20px 0px;
+            margin-left: auto;
+            color: blue;
+        }
+        .div_2 :nth-child(1) {
+            color: red;
+            text-align: center;
+        }
+
+        .div_3 {
+            border: 1px solid black;
+            width: 40%;
+        }
+        .div_3 :first-child {
+            color: gray;
+            margin-top: 5px;
+        }
+        .div_3 :nth-child(2) {
+            background-color: grey;
+            padding-left: 5px;
+        }
+        .div_3 :nth-child(3) {
+            background-color: blue;
+            padding-left: 5px;
+        }
+        .div_3 :nth-child(4) {
+            background-color: yellow;
+            padding-left: 5px;
+        }
+
+        .div_4 {
+            border: 1px solid black;
+            margin-left: auto;
+            width: 50%;
+        }
+        .div_4 :first-child {
+            text-decoration: overline;
+        }
+        .div_4 :nth-child(2) {
+            text-decoration: line-through;
+        }
+        .div_4 :nth-child(3) {
+            text-decoration: underline;
+        }
+        .div_4 :nth-child(4) > :first-child {
+            text-decoration: none;
+            margin: 0px;
+        }
+        .div_4 :nth-child(4) > :last-child {
+            margin: 0px;
+            text-decoration: none;
+        }
+
+        .div_5 {
+            border: 1px solid black;
+            width: 40%;
+            padding-top: 2%;
+            padding-right: 4%;
+            padding-bottom: 6%;
+            padding-left: 8%;
+            background-color: lightskyblue;
+        }
+        .div_5 :first-child b {
+            margin: 0px;
+        }
+
+        .div_6 {
+            border: 15px solid green ;
+            width: 40%;
+            margin-left: auto;
+        }
+        .div_6 :first-child {
+            padding: 50px;
+        }
+        .div_6 :first-child b {
+            margin: 0px;
+            padding: 0px;
+        }
+        .a_link {
+            font-size: 30px;
+            text-decoration: none;
+            margin-bottom: 50px;
+        }
+        @media only screen and (max-width: 720px) {
+            * {
+                margin: 20px 10px;
+            }
+            .div {
+                width: 80%;
+            }
+        }
+        @media only screen and (max-width: 480px) {
+            .div {
+                width: 90%;
+            }
+            .div_5 {
+                width: 85%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="div_1 div">
+        <h1>This is a heading</h1>
+        <p>This is a paragraph</p>
+        <p>This is another paragraph.</p>
+    </div>
+    <div class="div_2 div">
+        <h1>This is a heading</h1>
+        <p>This is a paragraph</p>
+        <p>This is another paragraph.</p>
+    </div>
+    <div class="div_3 div">
+        <hr>
+        <h1>Text with a grey bacground</h1>
+        <h2>Text with a blue bacground</h1>
+        <h3>Text with a yellow bacground</h3>
+    </div>
+    <div class="div_4 div">
+        <p>Paragraph with a line over it</p>
+        <h1>Heading with a line through it</h1>
+        <h3>Heading with an underline</h3>
+        <p><a href="http://www.google.com">This link is not underlined.</a><b>C</b>an you believe that such a thing as non-underline link exists?</p>
+    </div>
+    <div class="div_5 div">
+        <p>This div element has a top padding of 25<b>px</b> a right padding of 50<b>px</b>
+        a bottom padding of 75<b>px</b> and a left padding of 100<b>px</b></p>
+    </div>
+    <div class="div_6 div">
+        <p>This text is a contain of box. We have added a 50<b>px</b> padding, 20<b>px</b> margin and a 15<b>px</b> green border Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur magni eveniet tenetur ullam ad ipsa aliquam praesentium atque nostrum excepturi cum, non, quos officiis, impedit maiores. Et molestias amet odit praesentium nesciunt recusandae sed ipsa vitae molestiae voluptate necessitatibus ipsum fugiat, laudantium tempore labore sequi corporis consequatur explicabo dolores doloribus! </p>
+    </div>
+
+    <a class="a_link" href="./google.html">This is google link...</a>
+    
+</body>
+</html>
